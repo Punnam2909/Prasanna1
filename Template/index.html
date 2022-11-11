@@ -1,0 +1,47 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice</title>
+
+
+</head>
+<body>
+<ul class="nav">
+      <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="{% url 'Menu' %}">Menu </a>
+
+  </li>
+       <i> The Menu option are :</i>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="{% url 'Home' %}"><button>Home</button></a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="{% url 'punnam' %}"><button>punnam</button></a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="{% url 'ramala' %}"><button>ramala</button></a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="{% url 'intial' %}"><button>intial</button></a>
+  </li>
+
+<!--  <li class="nav-item">-->
+<!--    <a class="nav-link" href="#">Link</a>-->
+<!--  </li>-->
+<!--  <li class="nav-item">-->
+<!--    <a class="nav-link" href="#">Link</a>-->
+<!--  </li>-->
+<!--  <li class="nav-item">-->
+<!--    <a class="nav-link disabled">Disabled</a>-->
+<!--  </li>-->
+</ul>
+</body>
+
+
+{% block content %}
+<h1>This is Menu  page</h1>
+{% endblock content %}
+</html>
+
+

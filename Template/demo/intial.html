@@ -1,0 +1,18 @@
+{%extends "index.html" %}
+
+{% block content%}
+<title>demo/intials</title>
+<h1>This is Intial Page</h1>
+<div>
+{%for Category in Categories %}
+    <h2> <a href="/category/{{Category.id}}">{{Category.Family}}</a> </h2>
+    {% endfor %}
+</div>
+
+<div>
+{%for Intial in Intials %}
+    <h2>{{Intial.Surname}}</h2>
+    <b>Category:</b><p>{{Intial.Category}}</p>
+    {% endfor %}
+</div>
+{% endblock content%}

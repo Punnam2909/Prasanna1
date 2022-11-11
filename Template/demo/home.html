@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<title>Demo/Home</title>
+<h1>This is home page</h1>
+<!--{{Posts}}-->
+
+{% for Post in Posts %}
+
+<h2>{{Post.Name}}</h2>
+<i>{{Post.Company}}</i>
+<img src="{{Post.img.url}"/>
+
+
+{% endfor %}
+
+{% endblock content %}
+

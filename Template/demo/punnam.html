@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+
+{% block content %}
+<title>Demo/punnam</title>
+<h1>This is Punnam Family</h1>
+<!--{{Polls}}-->
+
+{% for Poll in Polls %}
+<h2>{{Poll.Name}}</h2>
+<i>{{Poll.DOB}}</i>
+{% endfor %}
+{% endblock content %}

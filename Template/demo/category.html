@@ -1,0 +1,16 @@
+{%extends "index.html" %}
+<head>
+    <title>Categories</title>
+</head>
+
+<body>
+{% block content %}
+
+<h1>Category:{{categories}}</h1>
+
+{%for Intial in Intials %}
+    <h2>Name:{{Intial.Surname}}</h2>
+    {% endfor %}
+{% endblock content %}
+
+</body>

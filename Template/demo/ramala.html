@@ -1,0 +1,10 @@
+{%extends "index.html" %}
+{% block content %}
+<title>demo/ramala</title>
+<h2>This is Ramala Family Information </h2>
+{{Rolls}}
+{% for Roll in Rolls %}
+<h2>{{Roll.Name}}</h2>
+<i>{{Roll.DOB}}</i>
+{% endfor %}
+{% endblock content %}
